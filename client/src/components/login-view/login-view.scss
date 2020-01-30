@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed&display=swap');
+
+$primary-color: #781820;
+$font_family_1: 'Oswald', sans-serif;
+$font_family_2: 'Roboto', sans-serif;
+
+.row,
+.form {
+justify-content: center 
+}
+
+.form-label {
+  font-family: $font_family_1;
+  font-size: 2vw;
+  margin: 2px 2px 2px 2px;
+  padding: 0px 2px 0px 2px;
+}
+
+.form-control {
+  font-family: $font_family_2;
+  font-size: 1.5vw;
+  margin: 2px 2px 2px 2px;
+  padding: 0px 2px 0px 2px;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+  font-family: $font_family_1;
+  font-size: 1.6vw;
+  margin: 8px;
+  padding: 8px;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: $primary-color;
+}
+
+@media screen and (min-width: 1200px) {
+  #navbar-brand h1 {
+    font-size: 30px;
+  }
+  /*  title */
+  #btn-primary,
+  .btn-primary,
+  .movie-title,
+  .form-label,
+  .text-muted {
+    font-size: 24px;
+  }
+
+  /*  text */
+  .form-control,
+  .genre-description,
+  .movie-description,
+  .director-bio,
+  .text-muted {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #navbar-brand h1 {
+    font-size: 24px;
+  }
+  /*  title */
+  #btn-primary,
+  .btn-primary,
+  .form-control,
+  .form-label {
+    font-size: 16px;
+  }
+
+  /*  text */
+  #btn-primary,
+  .btn-primary,
+  .form-control,
+  .form-label {
+    font-size: 14px;
+  }
+}

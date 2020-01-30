@@ -1,0 +1,36 @@
+/*
+  background-color: #f7f8fb;
+  Text Color (Gray13): #212121;
+  Primary Color (Red): #781820;
+  Secondary Color (Gray): #ABABAB;
+  Tertiary Color (Yellow): #cead00;
+*/
+
+$primary-color: #781820;
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  color: #781820;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  color: #781820;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #781820;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 5px;
+}

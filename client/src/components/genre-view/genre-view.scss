@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed&display=swap');
+
+$primary-color: #781820;
+$font_family_1: 'Oswald', sans-serif;
+$font_family_2: 'Roboto', sans-serif;
+
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+  font-family: $font_family_1;
+  text-align: center;
+  font-size: 1.6vw;
+  margin: 0px;
+  padding: .375rem .75rem;
+  vertical-align: middle;
+  border: 0px;
+  border-radius: .25rem;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: $primary-color;
+  border: white;
+}
+
+.btn-primary:active {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+}
+
+.genre-name {
+  font-family: $font_family_1;
+  display: block;
+  font-size: 2vw;
+  font-weight: bolder;
+  margin: 4px;
+  width: 333px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.genre-description {
+  font-family: $font_family_2;
+  font-size: 1.8vw;
+  margin: 4px;
+  width: 333px;
+}
+
+@media screen and (min-width: 1200px) {
+  #navbar-brand h1 {
+    font-size: 30px;
+  }
+  /*  title */
+  .genre-name {
+    font-size: 24px;
+  }
+
+  /*  text */
+  .genre-description {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #navbar-brand h1 {
+    font-size: 24px;
+  }
+  /*  title */
+  .genre-name{
+    font-size: 16px;
+  }
+
+  /*  text */
+  .genre-description {
+    font-size: 14px;
+  }
+}
