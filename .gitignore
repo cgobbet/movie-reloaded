@@ -1,0 +1,13 @@
+
+.DS_Store
+server_commented.js
+node_modules/
+Icon*
+index_copy.js
+models_copy.js
+package_copy.json
+client/.cache/
+.DS_Store
+styles.css
+index_alt.js
+*.jsx
