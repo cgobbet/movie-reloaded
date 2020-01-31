@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed&display=swap');
 
-a {
+$primary-color: #781820;
+$font_family_1: 'Oswald', sans-serif;
+$font_family_2: 'Roboto', sans-serif;
+
+a,
+a.nav-link {
   color: #781820;
   font-size: 1.5;
   font-family: $font_family_2;
 }
-
-$primary-color: #781820;
-$font_family_1: 'Oswald', sans-serif;
-$font_family_2: 'Roboto', sans-serif;
 
 #navbar-brand {
   color: $primary-color;
