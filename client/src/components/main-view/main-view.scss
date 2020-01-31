@@ -116,52 +116,53 @@ justify-content: center
 
 @media screen and (max-width: 600px) {
   a,
-.nav-link {
-  color: $primary-color;
-  font-family: $font_family_2;
-}
+  .nav-link {
+    color: $primary-color;
+    font-family: $font_family_2;
+  }
 
-p {
-  font-size: 2.5vw;  
-}
+  p {
+    font-size: 2.5vw;  
+  }
 
-.navbar-brand {
-  font-size: 4vw;
-}
+  h1,
+  .navbar-brand {
+    font-size: 4vw;
+  }
 
-.btn-delete,
-.btn-danger,
-.btn-primary {
-  font-size: 2.5vw;
-}
+  .btn-delete,
+  .btn-danger,
+  .btn-primary {
+    font-size: 2.5vw;
+  }
 
-.form-control {
-  font-size: 2vw;
-}
+  .form-control {
+    font-size: 2vw;
+  }
 
-.genre-name,
-.director-name,
-.profile-title,
-.card-title {
-  font-size: 3vw;  
-}
+  .genre-name,
+  .director-name,
+  .profile-title,
+  .card-title {
+    font-size: 3vw;  
+  }
 
-.form-label,
-.list-group-item{
-  font-size: 2.5vw;
-}
+  .form-label,
+  .list-group-item{
+    font-size: 2.5vw;
+  }
 
 
-.director-bio,
-.movie-description
-.genre-description,
-.span-label,
-.span-value,
-.time {
-  font-size: 2.5vw;
-}
+  .director-bio,
+  .movie-description
+  .genre-description,
+  .span-label,
+  .span-value,
+  .time {
+    font-size: 2.5vw;
+  }
 
-.text-muted {
-  font-size: 2vw;
-}
+  .text-muted {
+    font-size: 2vw;
+  }
 }
