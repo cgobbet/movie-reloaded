@@ -11,3 +11,5 @@ client/.cache/
 styles.css
 index_alt.js
 *.jsx
+.DS_Store
+.DS_Store
