@@ -1,31 +1,30 @@
-import React from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { connect } from "react-redux";
-
-import Button from "react-bootstrap/Button";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Row from "react-bootstrap/Row";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
 import "./main-view.scss";
 
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import { setMovies, setUser } from "../../actions/actions";
-import MoviesList from "../movies-list/movies-list";
-import { RegistrationView } from "../registration-view/registration-view";
+
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import { DirectorView } from "../director-view/director-view";
+import Form from "react-bootstrap/Form";
+import FormControl from "react-bootstrap/FormControl";
+import { GenreView } from "../genre-view/genre-view";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import { Link } from "react-router-dom";
 import { LoginView } from "../login-view/login-view";
 import { MovieCard } from "../movie-card/movie-card";
 import { MovieView } from "../movie-view/movie-view";
-import { DirectorView } from "../director-view/director-view";
-import { GenreView } from "../genre-view/genre-view";
-import { ProfileView } from "../profile-view/profile-view";
+import MoviesList from "../movies-list/movies-list";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Navbar from "react-bootstrap/Navbar";
 import { ProfileUpdate } from "../profile-view/profile-update";
-
+import { ProfileView } from "../profile-view/profile-view";
+import React from "react";
+import { RegistrationView } from "../registration-view/registration-view";
+import Row from "react-bootstrap/Row";
+import axios from "axios";
+import { connect } from "react-redux";
 
 export class MainView extends React.Component {
   constructor() {
@@ -50,7 +49,7 @@ export class MainView extends React.Component {
 
   getMovies(token) {
     axios
-      .get("https://flix-app-test.herokuapp.com/movies", {
+      .get("https://flix-reloaded.herokuapp.com/movies", {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(response => {
@@ -63,7 +62,7 @@ export class MainView extends React.Component {
   }
 
   getUser(token) {
-    axios.get("https://flix-app-test.herokuapp.com", {
+    axios.get("https://flix-reloaded.herokuapp.com", {
       headers: { Authorization: `Bearer ${token}`}
     })
     .then(response => { // Assign the result to the state
