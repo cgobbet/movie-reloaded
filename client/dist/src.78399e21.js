@@ -54011,7 +54011,7 @@ function (_React$Component) {
       this.setState({
         user: null
       });
-      window.open("/", "_self");
+      window.open("/client", "_self");
       localStorage.removeItem("token");
       localStorage.removeItem("user");
       localStorage.removeItem("movies");
@@ -54315,7 +54315,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60195" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56594" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
