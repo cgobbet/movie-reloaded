@@ -1,9 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-
 import Form from "react-bootstrap/Form";
-
+import PropTypes from "prop-types";
+import React from "react";
+import { connect } from "react-redux";
 import { setFilter } from "../../actions/actions";
 
 // no need for a class component as it has no state and doesn’t need lifecycle hooks

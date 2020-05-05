@@ -10,3 +10,4 @@ package_copy.json
 styles.css
 index_alt.js
 *.jsx
+.DS_Store
