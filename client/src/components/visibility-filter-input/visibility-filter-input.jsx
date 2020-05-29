@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import React from "react";
 import { connect } from "react-redux";
 import { setFilter } from "../../actions/actions";
-
-// no need for a class component as it has no state and doesn’t need lifecycle hooks
+/**
+ * @description no need for a class component as it has no state and doesn’t need lifecycle hooks
+ */
 function VisibilityFilterInput(props) {
   return (
     <Form.Control

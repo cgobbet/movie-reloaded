@@ -10,13 +10,16 @@ import Row from "react-bootstrap/Row";
 import "./login-view.scss";
 import axios from "axios";
 
+/**
+ * @description Enables login authentication
+ */
 export function LoginView(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = e => {
     e.preventDefault();
-    /* Send a request to the server for authentication */
+    /** * @description Send a request to the server for authentication */
     axios
       .post("https://flix-app-test.herokuapp.com/login", {
         username: username,
@@ -24,7 +27,7 @@ export function LoginView(props) {
       })
       .then(response => {
         const data = response.data;
-        props.onLoggedIn(data); // triggers onLoggedIn method on “main-view.jsx”
+        props.onLoggedIn(data); /** * @description triggers onLoggedIn method on “main-view.jsx” */
       })
       .catch(e => {
         console.log("no such user");

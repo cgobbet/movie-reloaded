@@ -16,7 +16,6 @@ const Users = Models.User;
 const app = express();
 const cors = require("cors");
 
-// mongoose.connect('mongodb://localhost:27017/myFlixDB', {useNewUrlParser: true});
 mongoose.connect(
   "mongodb+srv://admin:mongoMyApp@flixnewmongodb-da9ev.mongodb.net/myFlixDB?retryWrites=true&w=majority",
   {
@@ -35,9 +34,9 @@ app.get("/client/*", (req, res) => {
 app.use(cors());
 const auth = require("./auth")(app);
 
-// Get all movies
-// app.get('/movies', function(req, res) {
-// removal of passport.authenticate
+/**
+ * @description Get all movies
+ */
 app.get("/movies", passport.authenticate("jwt", { session: false }), function(
   req,
   res
@@ -52,7 +51,9 @@ app.get("/movies", passport.authenticate("jwt", { session: false }), function(
     });
 });
 
-// Get movie by title
+/**
+ * @description Get movie by title
+ */
 app.get(
   "/movies/:title",
   passport.authenticate("jwt", { session: false }),
@@ -68,7 +69,9 @@ app.get(
   }
 );
 
-// Gets the data about a movie genre by name
+/**
+ * @description Gets the data about a movie genre by name
+ */
 app.get(
   "/movies/genres/:name",
   passport.authenticate("jwt", { session: false }),
@@ -84,7 +87,9 @@ app.get(
   }
 );
 
-// Gets the data about a director by name
+/**
+ * @description Gets the data about a director by name
+ */
 app.get(
   "/movies/directors/:name",
   passport.authenticate("jwt", { session: false }),
@@ -100,7 +105,9 @@ app.get(
   }
 );
 
-// Get a user info by username
+/**
+ * @descriptionGet a user info by username
+ */
 app.get(
   "/users/:username",
   passport.authenticate("jwt", { session: false }),
@@ -116,7 +123,9 @@ app.get(
   }
 );
 
-// Adds new user
+/**
+ * @description Adds new user
+ */
 app.post(
   "/users",
   [
@@ -164,7 +173,9 @@ app.post(
   }
 );
 
-//Update user's info by username
+/**
+ * @description Update user's info by username
+ */
 app.put(
   "/users/:username",
   passport.authenticate("jwt", { session: false }),
@@ -193,7 +204,9 @@ app.put(
   }
 );
 
-// Delete a user by username
+/**
+ * @description Delete a user by username
+ */
 app.delete(
   "/users/:username",
   passport.authenticate("jwt", { session: false }),
@@ -213,7 +226,9 @@ app.delete(
   }
 );
 
-// Add a movie to a user's list of favorites OK
+/**
+ * @description Add a movie to a user's list of favorites
+ */
 app.post(
   "/users/:username/movies/:movieId",
   passport.authenticate("jwt", { session: false }),
@@ -236,7 +251,9 @@ app.post(
   }
 );
 
-// Remove  a movie from favorites
+/**
+ * @description Remove  a movie from favorites
+ */
 app.delete(
   "/users/:username/:movies/:movieId",
   passport.authenticate("jwt", { session: false }),

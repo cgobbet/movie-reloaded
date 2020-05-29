@@ -4,6 +4,9 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import './director-view.scss';
 
+/**
+ * @description Display directors' info on state
+ */
 export class DirectorView extends React.Component {
 
   constructor() {

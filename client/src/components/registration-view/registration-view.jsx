@@ -11,7 +11,9 @@ export function RegistrationView(props) {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [birthday, setBirthday] = useState("");
-  // need to update handleSubmit to prevent refresh
+/**
+ * @description need to update handleSubmit to prevent refresh
+ */
   const handleRegister = e => {
     e.preventDefault();
     axios
@@ -24,7 +26,10 @@ export function RegistrationView(props) {
       .then(response => {
         const data = response.data;
         console.log(data);
-        window.open("/client", "_self"); // the second argument '_self' is necessary so that the page will open in the current tab
+        window.open("/client", "_self"); 
+/**
+  * @description  the second argument '_self' is necessary so that the page will open in the current tab
+  */
       })
       .catch(e => {
         console.error(

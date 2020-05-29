@@ -3,6 +3,10 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import './genre-view.scss';
 
+/**
+ * @description Display Genre info on state
+ */
+
 export class GenreView extends React.Component {
 
   constructor() {
