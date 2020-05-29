@@ -6263,6 +6263,10 @@ exports.setMovies = setMovies;
 exports.setFilter = setFilter;
 exports.setUser = setUser;
 exports.SET_USER = exports.SET_FILTER = exports.SET_MOVIES = void 0;
+
+/**
+ * @description Set search configurations
+ */
 var SET_MOVIES = "SET_MOVIES";
 exports.SET_MOVIES = SET_MOVIES;
 var SET_FILTER = "SET_FILTER";
@@ -6746,6 +6750,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+/**
+ * @description Display directors' info on state
+ */
 var DirectorView =
 /*#__PURE__*/
 function (_React$Component) {
@@ -8046,6 +8053,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+/**
+ * @description Display Genre info on state
+ */
 var GenreView =
 /*#__PURE__*/
 function (_React$Component) {
@@ -10003,6 +10013,9 @@ function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) ||
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+/**
+ * @description Enables login authentication
+ */
 function LoginView(props) {
   var _useState = (0, _react.useState)(""),
       _useState2 = _slicedToArray(_useState, 2),
@@ -10016,14 +10029,15 @@ function LoginView(props) {
 
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
-    /* Send a request to the server for authentication */
+    /** * @description Send a request to the server for authentication */
 
     _axios.default.post("https://flix-app-test.herokuapp.com/login", {
       username: username,
       password: password
     }).then(function (response) {
       var data = response.data;
-      props.onLoggedIn(data); // triggers onLoggedIn method on “main-view.jsx”
+      props.onLoggedIn(data);
+      /** * @description triggers onLoggedIn method on “main-view.jsx” */
     }).catch(function (e) {
       console.log("no such user");
     });
@@ -38933,7 +38947,9 @@ var _actions = require("../../actions/actions");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// no need for a class component as it has no state and doesn’t need lifecycle hooks
+/**
+ * @description no need for a class component as it has no state and doesn’t need lifecycle hooks
+ */
 function VisibilityFilterInput(props) {
   return _react.default.createElement(_Form.default.Control, {
     onChange: function onChange(e) {
@@ -52153,7 +52169,10 @@ function RegistrationView(props) {
   var _useState7 = (0, _react.useState)(""),
       _useState8 = _slicedToArray(_useState7, 2),
       birthday = _useState8[0],
-      setBirthday = _useState8[1]; // need to update handleSubmit to prevent refresh
+      setBirthday = _useState8[1];
+  /**
+   * @description need to update handleSubmit to prevent refresh
+   */
 
 
   var handleRegister = function handleRegister(e) {
@@ -52167,7 +52186,10 @@ function RegistrationView(props) {
     }).then(function (response) {
       var data = response.data;
       console.log(data);
-      window.open("/client", "_self"); // the second argument '_self' is necessary so that the page will open in the current tab
+      window.open("/client", "_self");
+      /**
+        * @description  the second argument '_self' is necessary so that the page will open in the current tab
+        */
     }).catch(function (e) {
       console.error("the user is already registered and maybe something else!");
     });
@@ -52635,7 +52657,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var store = (0, _redux.createStore)(_reducers.default); // Main component (will eventually use all the others)
+var store = (0, _redux.createStore)(_reducers.default);
+/**
+ * @description Main component (will eventually use all the others)
+ */
 
 var MyFlixApplication =
 /*#__PURE__*/
@@ -52658,10 +52683,16 @@ function (_React$Component) {
   }]);
 
   return MyFlixApplication;
-}(_react.default.Component); // Find the root of our app
+}(_react.default.Component);
+/**
+ * @description Find the root of our app
+ */
 
 
-var container = document.getElementsByClassName("app-container")[0]; // Tell React to render our app in the root DOM element
+var container = document.getElementsByClassName("app-container")[0];
+/**
+ * @description Tell React to render our app in the root DOM element
+ */
 
 _reactDom.default.render(_react.default.createElement(MyFlixApplication), container);
 },{"./components/main-view/main-view":"components/main-view/main-view.jsx","react-redux":"../node_modules/react-redux/es/index.js","react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","redux":"../node_modules/redux/es/redux.js","./reducers/reducers":"reducers/reducers.js"}],"../../../../../../../.nvm/versions/node/v10.16.3/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -52692,7 +52723,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53876" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58619" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
