@@ -5,8 +5,8 @@
   <p>This is the document intended to store details about the application myFlix. The app is a lean REST API that allows users to target movies following specific criteria (yet to be added to this document). This file contains technical details
     needed for maintenance, operation or improvement of the app by users and developers and also state the application's public, features, goals, environment and rationale. </p>
   <p>The app is hosted on a server with some technologies (like JavaScript, Node.js, Express, Mongo DB)
-    and can be accessed via HTTP methods at any given time. The whole development process of the toll can be found at a different repository, <a href="https://github.com/cgobbet/movie_api" target="_blank">movie_api</a>, at the point of deployment to Heroku. The whole history of the development is documented there.</p><br /><br /> 
-
+    and can be accessed via HTTP methods at any given time. The whole development process of the toll can be found at a different repository, <a href="https://github.com/cgobbet/movie_api" target="_blank">movie_api</a>, at the point of deployment to Heroku. The whole history of the development is documented there.</p>
+    
 Check the working app looking for  [it on my portfolio](https://cassiano.zeitgeist.digital), under the tab "Projects".
 
   <h2>Features</h2>
