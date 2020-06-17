@@ -1,18 +1,4 @@
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <meta name="description" content="myFlix - Documentation">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-  <!--Mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Favicon-->
-  <link rel="shortcut icon" href="img/zombieflix.ico" type="image/x-icon">
-  <!-- Normalize -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-
-</head>
+![myFlix, a React Movie Search app](https://i.imgur.com/DWVNjzd.jpg "myFlix, a React Movie Search app")
 
 <body>
   <h1>myFlix - the app</h1>
@@ -20,6 +6,7 @@
     needed for maintenance, operation or improvement of the app by users and developers and also state the application's public, features, goals, environment and rationale. </p>
   <p>The app is hosted on a server with some technologies (like JavaScript, Node.js, Express, Mongo DB)
     and can be accessed via HTTP methods at any given time. The whole development process of the toll can be found at a different repository, <a href="https://github.com/cgobbet/movie_api" target="_blank">movie_api</a>, at the point of deployment to Heroku. The whole history of the development is documented there.</p>
+    <p>Check the working app looking for  [it on my portfolio](https://cassiano.zeitgeist.digital), under the tab "Projects".</p>
   <h2>Features</h2>
   <p>
     - allows users to sign up, update their own info and delete account if he/she wishes.</br>
